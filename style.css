@@ -12,6 +12,7 @@
 }
 #header {
 	height: 60px;
+	border-bottom: 1px solid #ccc;
 }
 #brand {
 	height: 60px;
