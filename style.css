@@ -1,22 +1,38 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 #wrap {
-	width: 1080px;
+	width: 1180px;
 	margin: 0 auto;
 }
 #header {
 	height: 60px;
 }
 #brand {
+	height: 60px;
+	margin: 0;
 	float: left;
 }
 #header #brand h1 {
-	font-size: 16px;
+	font-size: 18px;
+	margin: 8px 8px;
+	color: #898989;
 }
 #header-nav {
 	float: right;
 }
 #header-nav ul {
+	height: 60px;
+	margin-top: 0;
 	list-style-type: none;
 }
 #header-nav ul li {
 	display: inline-block;
+	padding: 8px 8px;
+	font-size: 14px;
 }
