@@ -13,6 +13,10 @@ body {
 	width: 1180px;
 	margin: 0 auto;
 }
+.heading {
+	text-align: center;
+	padding-top: 100px;
+}
 #header {
 	height: 50px;
 	border-bottom: 1px solid #eee;
@@ -46,4 +50,48 @@ body {
 #header-nav ul li:hover {
 	color: #37BC9B;
 	cursor: pointer;
+}
+
+#keyvisal-wrap {
+	width: 100%;
+	height: 500px;
+	background: url(./images/backgrounds/top.jpg);
+	background-color: rgba(0,0,0,0.4);
+	background-position: 0 -50px;
+	background-size: cover;
+}
+#keyvisal-wrap .heading {
+	color: white;
+	padding-top: 120px;
+}
+#keyvisal-wrap .heading h2 {
+	font-size: 46px;
+	font-weight: normal;
+}
+#keyvisal-wrap .heading p {
+	opacity: 0.6;
+}
+.cover {
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+}
+#btn-keyvisal {
+	width: 140px;
+	margin: 0 auto;
+	margin-top: 40px;
+	border: 1px solid rgba(255,255,255,0.2);
+	text-align: center;
+	display: block;
+	background: rgba(255,255,255,0.1);
+	color: white;
+	transition: 0.4s;
+}
+#btn-keyvisal a {
+	display: block;
+	padding: 10px 15px;
+	color: white;
+	text-decoration: none;
+}
+#btn-keyvisal:hover {
+	border: 1px solid rgba(255,255,255,1);
 }
