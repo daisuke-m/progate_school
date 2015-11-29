@@ -15,7 +15,12 @@ body {
 }
 .heading {
 	text-align: center;
-	padding-top: 100px;
+	padding-top: 40px;
+}
+.heading h2 {
+	color: #434A54;
+	font-size: 30px;
+	font-weight: normal;
 }
 #header {
 	height: 50px;
@@ -67,9 +72,11 @@ body {
 #keyvisal-wrap .heading h2 {
 	font-size: 46px;
 	font-weight: normal;
+	color: white;
 }
 #keyvisal-wrap .heading p {
 	opacity: 0.6;
+	color: white;
 }
 .cover {
 	height: 100%;
@@ -95,3 +102,25 @@ body {
 #btn-keyvisal:hover {
 	border: 1px solid rgba(255,255,255,1);
 }
+#language-container {
+	width: 800px;
+	margin: 0 auto;
+}
+.language-item {
+	width: 400px;
+	padding: 20px;
+	float: left;
+	text-align: center;
+}
+.language-item h3 {
+	color:  #434A54;
+	font-size: 16px;
+}
+.language-item p {
+	color: #AAB2BD;
+	font-size: 14px;
+}
+#features {
+	clear: both;
+}
+
