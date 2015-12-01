@@ -5,8 +5,11 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 body {
-	margin: 0
+	margin: 0;
+	font-family: 'Noto Sans Japanese', sans-serif;
+	font-weight: 100;
 }
 
 .container {
@@ -19,8 +22,9 @@ body {
 }
 .heading h2 {
 	color: #434A54;
-	font-size: 30px;
+	font-size: 32px;
 	font-weight: normal;
+	font-weight: 200;
 }
 #header {
 	width: 100%;
@@ -74,7 +78,6 @@ body {
 }
 #keyvisal-wrap .heading h2 {
 	font-size: 46px;
-	font-weight: normal;
 	color: white;
 }
 #keyvisal-wrap .heading p {
@@ -153,10 +156,77 @@ body {
 	color: #AAB2BD;
 	font-size: 14px;
 }
-#course {
+#course-wrap {
+	clear: both;
+	background: #E6E9ED;
+	padding-bottom: 80px;
+	overflow: auto;
+}
+#course-row {
+	  width: 100%;
+    margin: 0 auto;
+}
+.course-item {
+	margin-right: 1.5%;
+	margin-left: 1.5%;
+	width: 30%;
+	background: white;
+	padding: 40px 15px 80px 15px;
+	box-shadow:rgba(0, 0, 0, 0.2) 0px 1px 1px 1px;
+	float: left;
+}
+.course-header-course {
+	height: 100px;
+	padding: 15px;
+	background: #434A54;
+	color: white;
+	line-height: 70px;
+	font-size: 30px;
+	text-align: center;
+}
+#course-common {
+	background: #36CABC;
+}
+.course-header-price {
+	height: 100px;
+	margin-bottom: 30px;
+	padding: 15px;
+	background: #E6E9ED;
+	line-height: 70px;
+	font-size: 30px;
+	text-align: center;
+}
+.course-item p {
+	width: 80%;
+  display: block;
+  margin: 0 auto;
+	text-align: center;
+	color: #AAB2BD;
+	font-size: 13px;
+	padding: 20px;
+	border-bottom: 1px solid #E6E9ED;
+}
+.btn-application {
+	margin: 0 auto;
+	margin-top: 40px;
+	background: #434A54;
+	display: block;
+  width: 120px;
+  text-align: center;
+}
+.btn-application a {
+	padding: 12px 14px;
+	color: rgba(255,255,255,0.5);
+	display: block;
+	text-decoration: none;
+	transition: all 0.4s;
+}
+.btn-application a:hover {
+	color: rgba(255,255,255,1);
+}
+#mentor-wrap {
 	clear: both;
 }
-
 /*footer*/
 #footer {
 	width: 100%;
