@@ -188,11 +188,11 @@ body {
 	background: #36CABC;
 }
 .course-header-price {
-	height: 100px;
+	height: 120px;
 	margin-bottom: 30px;
 	padding: 15px;
 	background: #E6E9ED;
-	line-height: 70px;
+	line-height: 80px;
 	font-size: 30px;
 	text-align: center;
 }
