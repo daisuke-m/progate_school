@@ -228,6 +228,25 @@ body {
 #mentor-wrap {
 	clear: both;
 }
+#mentor-wrap .mentor-item {
+	width: 920px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	text-align: center;
+}
+#mentor-wrap .mentor-item img {
+	border-radius: 50%;
+  width: 200px;
+}
+#mentor-wrap .mentor-item p {
+	color: #434A54;
+	font-size: 18px;
+	font-weight: 200;
+}
+#mentor-wrap .mentor-item .mentor-name {
+	color: #AAB2BD;
+	font-size: 14px;
+}
 /*footer*/
 #footer {
 	width: 100%;
