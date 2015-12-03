@@ -247,6 +247,18 @@ body {
 	color: #AAB2BD;
 	font-size: 14px;
 }
+#comment {
+	height: 380px;
+	background: url(./images/backgrounds/night_view.jpg) no-repeat;
+	background-size: cover;
+}
+#comment p {
+	padding-top: 150px;
+	text-align: center;
+	font-size: 21px;
+	line-height: 1.8;
+	color: white;
+}
 /*footer*/
 #footer {
 	width: 100%;
