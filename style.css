@@ -395,6 +395,19 @@ body {
 	font-size: 18px;
 	margin-right: 0.8em;
 }
+#follow-us {
+	clear: both;
+	padding-bottom: 40px;
+}
+#follow-us p a {
+	margin: 8px;
+	font-size: 36px;
+	color: #292929;
+	transition: all 0.4s;
+}
+#follow-us p a:hover {
+	color: #10D4C1;
+}
 /*footer*/
 #footer {
 	width: 100%;
