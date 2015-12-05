@@ -34,6 +34,9 @@
 		<div id="btn-keyvisal">
 			<a href="#">もっと詳しく</a>
 		</div>
+		<p id="more-detail">
+			私がプログラミングを身につけて一番に感じたことは「自由」です。プログラミングができるようになる前は、どこかの企業に就職しないと食べていけないという恐怖感がありました。どこかに依存しないと生きていけないという感覚です。プログラミングで仕事をするようになって気づいたことは、どの企業もエンジニアを必要としていて、仕事も山のようにあるということでした。エンジニアで業務委託を受ければ月６０万〜１００万程度の収入になります。半年だけ働いて後は自分の時間に使うという働き方も可能です。在宅や海外でも働けます。世の中に必要とされる技術を磨き続けている限り自分は食べていけるという自信は、将来への不安を減らしてくれました。
+		</p>
 	</div>
 </div>
 <!-- 学習する言語 -->
@@ -149,20 +152,22 @@
 		<div class="heading">
 			<h2>コースを選ぶ</h2>
 		</div>
-		<div class="mentor-item">
-			<img src="images/mentors/mentor_1.jpg">
-			<p>プログラミングサークルでの活動や受託を通じてスキルを磨く。その後は複数のスタートアップに協力しながらプログラミングを教えるようになり、これをオンラインのサービスとして提供したいと思い、2014年7月に株式会社Progateを創業、現代表取締役。</p>
-			<span class="mentor-name">-加藤将倫</span>
-		</div>
-		<div class="mentor-item">
-			<img src="images/mentors/mentor_2.jpg">
-			<p>３年生の秋にエンジニアを集めるために東大プログラミングサークル「ZEROXONE」をたちあげる。自分の人生はプログラミングを身につけたことによって劇的に変わりました。みんなにも同じ体験をしてもらいたくてProgateを作っています！</p>
-			<span class="mentor-name">-村井謙太</span>
-		</div>
-		<div class="mentor-item">
-			<img src="images/mentors/mentor_3.jpg">
-			<p>ProgateではUI/UXを担当。ユーザーに夢中で楽しんでもらえるようなサービス設計、学びによって人生を豊かにできるようなサービスを目指し、日々プロダクト改善に取り組んでいる。テクノロジー・デザイン・ビジネスの分野で、領域横断的に活動し、人々がワクワクして止まないモノを生み出せる人間で在りたいと思う。</p>
-			<span class="mentor-name">-神田美智</span>
+		<div id="carousel">
+			<div class="mentor-item">
+				<img src="images/mentors/mentor_1.jpg">
+				<p>プログラミングサークルでの活動や受託を通じてスキルを磨く。その後は複数のスタートアップに協力しながらプログラミングを教えるようになり、これをオンラインのサービスとして提供したいと思い、2014年7月に株式会社Progateを創業、現代表取締役。</p>
+				<span class="mentor-name">-加藤将倫</span>
+			</div>
+			<div class="mentor-item">
+				<img src="images/mentors/mentor_2.jpg">
+				<p>３年生の秋にエンジニアを集めるために東大プログラミングサークル「ZEROXONE」をたちあげる。自分の人生はプログラミングを身につけたことによって劇的に変わりました。みんなにも同じ体験をしてもらいたくてProgateを作っています！</p>
+				<span class="mentor-name">-村井謙太</span>
+			</div>
+			<div class="mentor-item">
+				<img src="images/mentors/mentor_3.jpg">
+				<p>ProgateではUI/UXを担当。ユーザーに夢中で楽しんでもらえるようなサービス設計、学びによって人生を豊かにできるようなサービスを目指し、日々プロダクト改善に取り組んでいる。テクノロジー・デザイン・ビジネスの分野で、領域横断的に活動し、人々がワクワクして止まないモノを生み出せる人間で在りたいと思う。</p>
+				<span class="mentor-name">-神田美智</span>
+			</div>
 		</div>
 	</div>
 </div>
@@ -280,5 +285,27 @@
 <div id="footer">
 	©2015- Progate
 </div>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $("#btn-keyvisal").on("click", function() {
+    		// もし$(this)がopeningクラスを持っていたら
+    		if($(this).hasClass("opening")) {
+    			$(this).children("a").text("もっと詳しく");
+    			// テキストは「もっと詳しく」を挿入
+    			$(this).removeClass("opening");
+    			// openingクラスをはずす
+    		
+    		//　そうでなければ、「閉じる」を挿入し、openingクラスを追加 
+    		} else {
+    			$(this).children("a").text("閉じる");
+    			$(this).attr("class", "opening");
+    		}
+        $(this).next().slideToggle();
+        // $(this).toggleClass("active");
+    });
+  });
+
+</script>
 </body>
 </html>
