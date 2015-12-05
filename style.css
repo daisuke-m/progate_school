@@ -336,6 +336,7 @@ body {
 #contact-left {
 	width: 50%;
 	padding: 5px;
+	padding-left: 10px;
 	float: left;
 }
 #contact-left input {
