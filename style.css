@@ -342,6 +342,7 @@ body {
 	width: 100%;
 }
 .caption {
+	padding-top: 15px;
 	text-align: center;
 }
 .caption a {
