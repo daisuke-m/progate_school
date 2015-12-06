@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
   <title>HTML LESSON</title>
@@ -150,9 +151,41 @@
 <div id="mentor-wrap">
 	<div class="container">
 		<div class="heading">
-			<h2>コースを選ぶ</h2>
+			<h2>メンター紹介</h2>
 		</div>
-		<div id="carousel">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		  </ol>
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item active">
+		      
+						<img src="images/mentors/mentor_1.jpg">
+						<p>プログラミングサークルでの活動や受託を通じてスキルを磨く。その後は複数のスタートアップに協力しながらプログラミングを教えるようになり、これをオンラインのサービスとして提供したいと思い、2014年7月に株式会社Progateを創業、現代表取締役。</p>
+						<span class="mentor-name">-加藤将倫</span>
+		      
+		    </div>
+		    <div class="item">
+		    	
+			      <img src="images/mentors/mentor_2.jpg">
+						<p>３年生の秋にエンジニアを集めるために東大プログラミングサークル「ZEROXONE」をたちあげる。自分の人生はプログラミングを身につけたことによって劇的に変わりました。みんなにも同じ体験をしてもらいたくてProgateを作っています！</p>
+						<span class="mentor-name">-村井謙太</span>
+					
+		    </div>
+		    <div class="item">
+			      <img src="images/mentors/mentor_3.jpg">
+						<p>ProgateではUI/UXを担当。ユーザーに夢中で楽しんでもらえるようなサービス設計、学びによって人生を豊かにできるようなサービスを目指し、日々プロダクト改善に取り組んでいる。テクノロジー・デザイン・ビジネスの分野で、領域横断的に活動し、人々がワクワクして止まないモノを生み出せる人間で在りたいと思う。</p>
+						<span class="mentor-name">-神田美智</span>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- <div id="carousel">
 			<div class="mentor-item">
 				<img src="images/mentors/mentor_1.jpg">
 				<p>プログラミングサークルでの活動や受託を通じてスキルを磨く。その後は複数のスタートアップに協力しながらプログラミングを教えるようになり、これをオンラインのサービスとして提供したいと思い、2014年7月に株式会社Progateを創業、現代表取締役。</p>
@@ -168,7 +201,7 @@
 				<p>ProgateではUI/UXを担当。ユーザーに夢中で楽しんでもらえるようなサービス設計、学びによって人生を豊かにできるようなサービスを目指し、日々プロダクト改善に取り組んでいる。テクノロジー・デザイン・ビジネスの分野で、領域横断的に活動し、人々がワクワクして止まないモノを生み出せる人間で在りたいと思う。</p>
 				<span class="mentor-name">-神田美智</span>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </div>
 <!-- コメント -->
@@ -286,6 +319,7 @@
 	©2015- Progate
 </div>
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script type="text/javascript">
   $(function(){
     $("#btn-keyvisal").on("click", function() {

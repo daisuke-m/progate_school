@@ -140,6 +140,7 @@ body {
 
 #features {
 	clear: both;
+	padding-bottom: 20px;
 }
 #features #image-bg {
 	height: 380px;
@@ -153,7 +154,7 @@ body {
 #feature-steps {
 	width: 1080px;
 	margin: 0 auto;
-	padding-top: 100px;
+	padding-top: 70px;
 }
 .feature-step {
 	width: 50%;
@@ -161,7 +162,8 @@ body {
 	float: left;
 }
 .feature-step h3 {
-	font-weight: normal;
+	font-weight: 200;
+	font-size: 18px;
 }
 .feature-step p {
 	color: #AAB2BD;
@@ -178,9 +180,10 @@ body {
     margin: 0 auto;
 }
 .course-item {
-	margin-right: 1.5%;
-	margin-left: 1.5%;
-	width: 30%;
+	margin-top: 30px;
+	margin-right: 13px;
+	margin-left: 13px;
+	width: 31%;
 	background: white;
 	padding: 40px 15px 80px 15px;
 	box-shadow:rgba(0, 0, 0, 0.2) 0px 1px 1px 1px;
@@ -238,31 +241,48 @@ body {
 #mentor-wrap {
 	clear: both;
 }
-#carousel {
+.carousel-indicators li {
+	width: 14px;
+	height: 14px;
+	margin: 4px;
+	background: #ccc;
+}
+.carousel-indicators li:hover{
+	background: #9595A2;
+}
+.carousel-indicators li.active {
+	width: 14px;
+	height: 14px;
+	margin: 4px;
+	background: #9595A2;
+}
+#carousel-example-generic {
 	width: 920px;
 	height: 450px;
+	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
 }
-#mentor-wrap .mentor-item {
+.carousel-inner .item {
 	width: 920px;
 	margin: 0 auto;
-	margin-bottom: 60px;
+	margin-top: 20px;
+	margin-bottom: 40px;
 	text-align: center;
-	position: absolute;
-	top: 0;
-	left: 0;
 }
-#mentor-wrap .mentor-item img {
+.carousel-inner .item img {
 	border-radius: 50%;
   width: 200px;
+  margin: 0 auto;
 }
-#mentor-wrap .mentor-item p {
+.carousel-inner .item p {
+	margin-top: 20px;
 	color: #434A54;
 	font-size: 18px;
 	font-weight: 200;
 }
-#mentor-wrap .mentor-item .mentor-name {
+
+.mentor-name {
 	color: #AAB2BD;
 	font-size: 14px;
 }
@@ -285,8 +305,7 @@ body {
 }
 #tab-nav {
 	width: 380px;
-	margin: 0 auto;
-	margin-bottom: 30px;
+	margin: 30px auto;
 	text-align: center;
 }
 #tab-nav a {
