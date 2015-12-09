@@ -184,24 +184,6 @@
 		    </div>
 		  </div>
 		</div>
-
-		<!-- <div id="carousel">
-			<div class="mentor-item">
-				<img src="images/mentors/mentor_1.jpg">
-				<p>プログラミングサークルでの活動や受託を通じてスキルを磨く。その後は複数のスタートアップに協力しながらプログラミングを教えるようになり、これをオンラインのサービスとして提供したいと思い、2014年7月に株式会社Progateを創業、現代表取締役。</p>
-				<span class="mentor-name">-加藤将倫</span>
-			</div>
-			<div class="mentor-item">
-				<img src="images/mentors/mentor_2.jpg">
-				<p>３年生の秋にエンジニアを集めるために東大プログラミングサークル「ZEROXONE」をたちあげる。自分の人生はプログラミングを身につけたことによって劇的に変わりました。みんなにも同じ体験をしてもらいたくてProgateを作っています！</p>
-				<span class="mentor-name">-村井謙太</span>
-			</div>
-			<div class="mentor-item">
-				<img src="images/mentors/mentor_3.jpg">
-				<p>ProgateではUI/UXを担当。ユーザーに夢中で楽しんでもらえるようなサービス設計、学びによって人生を豊かにできるようなサービスを目指し、日々プロダクト改善に取り組んでいる。テクノロジー・デザイン・ビジネスの分野で、領域横断的に活動し、人々がワクワクして止まないモノを生み出せる人間で在りたいと思う。</p>
-				<span class="mentor-name">-神田美智</span>
-			</div>
-		</div> -->
 	</div>
 </div>
 <!-- コメント -->
@@ -222,50 +204,50 @@
 				<h2>コラム</h2>
 			</div>
 			<div id="tab-nav">
-				<a href="#" class="active">show all</a>
-				<a href="#">コラム</a>
-				<a href="#">プログラミングTips</a>
+				<a id="btn-show-all" href="#" class="active">show all</a>
+				<a id="btn-column" href="#">コラム</a>
+				<a id="btn-tips" href="#">プログラミングTips</a>
 			</div>
-			<div class="column-item">
+			<div class="column-item column">
 				<a><img src="images/portfolio/programmer.jpg"></a>
 				<div class="caption">
 					<a href="#"><p class="caption-title">20代のエンジニアが初めての転職でつまづきやすい点</p></a>
 					<span class="tag">コラム</span>
 				</div>
 			</div>
-			<div class="column-item">
+			<div class="column-item tips">
 				<a><img src="images/portfolio/html5.jpg"></a>
 				<div class="caption">
-					<a href="#"><p class="caption-title">20代のエンジニアが初めての転職でつまづきやすい点</p></a>
-					<span class="tag">コラム</span>
+					<a href="#"><p class="caption-title">HTMLの新タグについて</p></a>
+					<span class="tag">HTML</span>
 				</div>
 			</div>
-			<div class="column-item">
+			<div class="column-item tips">
 				<a><img src="images/portfolio/js.jpg"></a>
 				<div class="caption">
-					<a href="#"><p class="caption-title">20代のエンジニアが初めての転職でつまづきやすい点</p></a>
-					<span class="tag">コラム</span>
+					<a href="#"><p class="caption-title">Javascriptの文法まとめ</p></a>
+					<span class="tag">Javascript</span>
 				</div>
 			</div>
-			<div class="column-item">
+			<div class="column-item column">
 				<a><img src="images/portfolio/books.jpg"></a>
 				<div class="caption">
-					<a href="#"><p class="caption-title">20代のエンジニアが初めての転職でつまづきやすい点</p></a>
+					<a href="#"><p class="caption-title">新卒ソフトウェアエンジニアのための技術書100冊</p></a>
 					<span class="tag">コラム</span>
 				</div>
 			</div>
-			<div class="column-item">
+			<div class="column-item column">
 				<a><img src="images/portfolio/engineer.jpg"></a>
 				<div class="caption">
-					<a href="#"><p class="caption-title">20代のエンジニアが初めての転職でつまづきやすい点</p></a>
+					<a href="#"><p class="caption-title">「プレイヤーでも年収1000マンに」エンジニアの評価制度</p></a>
 					<span class="tag">コラム</span>
 				</div>
 			</div>
-			<div class="column-item">
+			<div class="column-item tips">
 				<a><img src="images/portfolio/inspect.jpg"></a>
 				<div class="caption">
-					<a href="#"><p class="caption-title">20代のエンジニアが初めての転職でつまづきやすい点</p></a>
-					<span class="tag">コラム</span>
+					<a href="#"><p class="caption-title">要素の検証をしてみよう</p></a>
+					<span class="tag">HTML/CSS</span>
 				</div>
 			</div>
 		</div>
@@ -320,25 +302,8 @@
 </div>
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-  $(function(){
-    $("#btn-keyvisal").on("click", function() {
-    		// もし$(this)がopeningクラスを持っていたら
-    		if($(this).hasClass("opening")) {
-    			$(this).children("a").text("もっと詳しく");
-    			// テキストは「もっと詳しく」を挿入
-    			$(this).removeClass("opening");
-    			// openingクラスをはずす
-    		
-    		//　そうでなければ、「閉じる」を挿入し、openingクラスを追加 
-    		} else {
-    			$(this).children("a").text("閉じる");
-    			$(this).attr("class", "opening");
-    		}
-        $(this).next().slideToggle();
-        // $(this).toggleClass("active");
-    });
-  });
+<script type="text/javascript" src="javascript/school.js">
+  
 
 </script>
 </body>
