@@ -204,11 +204,12 @@
 				<h2>コラム</h2>
 			</div>
 			<div id="tab-nav">
-				<a id="btn-show-all" href="#" class="active">show all</a>
-				<a id="btn-column" href="#">コラム</a>
-				<a id="btn-tips" href="#">プログラミングTips</a>
+				<a id="btn-show-all" class="active">show all</a>
+				<a id="btn-column">コラム</a>
+				<a id="btn-tips">プログラミングTips</a>
 			</div>
 			<div class="column-item column">
+				<a class="image-overlay"></a>
 				<a><img src="images/portfolio/programmer.jpg"></a>
 				<div class="caption">
 					<a href="#"><p class="caption-title">20代のエンジニアが初めての転職でつまづきやすい点</p></a>
@@ -216,6 +217,7 @@
 				</div>
 			</div>
 			<div class="column-item tips">
+				<a class="image-overlay"></a>
 				<a><img src="images/portfolio/html5.jpg"></a>
 				<div class="caption">
 					<a href="#"><p class="caption-title">HTMLの新タグについて</p></a>
@@ -223,6 +225,7 @@
 				</div>
 			</div>
 			<div class="column-item tips">
+				<a class="image-overlay"></a>
 				<a><img src="images/portfolio/js.jpg"></a>
 				<div class="caption">
 					<a href="#"><p class="caption-title">Javascriptの文法まとめ</p></a>
@@ -230,6 +233,7 @@
 				</div>
 			</div>
 			<div class="column-item column">
+				<a class="image-overlay"></a>
 				<a><img src="images/portfolio/books.jpg"></a>
 				<div class="caption">
 					<a href="#"><p class="caption-title">新卒ソフトウェアエンジニアのための技術書100冊</p></a>
@@ -237,6 +241,7 @@
 				</div>
 			</div>
 			<div class="column-item column">
+				<a class="image-overlay"></a>
 				<a><img src="images/portfolio/engineer.jpg"></a>
 				<div class="caption">
 					<a href="#"><p class="caption-title">「プレイヤーでも年収1000マンに」エンジニアの評価制度</p></a>
@@ -244,6 +249,7 @@
 				</div>
 			</div>
 			<div class="column-item tips">
+				<a class="image-overlay"></a>
 				<a><img src="images/portfolio/inspect.jpg"></a>
 				<div class="caption">
 					<a href="#"><p class="caption-title">要素の検証をしてみよう</p></a>
@@ -266,9 +272,9 @@
 			<div id="contact-left">
 				<h3>メッセージを送る</h3>
 				<form>
-					<input type="text" name="address" placeholder="Email">
-					<input type="text" name="subject" placeholder="Subject">
-					<textarea name="message" rows="4" cols="40" placeholder="Message"></textarea>
+					<input type="text" name="address" placeholder="Email" required aria-required=”true”>
+					<input type="text" name="subject" placeholder="Subject" required>
+					<textarea name="message" rows="4" cols="40" placeholder="Message" required></textarea>
 					<a href="#" id="btn-submit">
 						Submit
 					</a>

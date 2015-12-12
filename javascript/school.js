@@ -15,4 +15,33 @@ $(function(){
     $(this).next().slideToggle();
     // $(this).toggleClass("active");
   });
+  // タブ切り替え
+  $('#btn-show-all').click(function(){
+    $(this).siblings().removeClass('active');
+    $(this).attr("class", "active");
+    $('.column, .tips').fadeIn();
+  })
+  $('#btn-column').click(function(){
+    $(this).siblings().removeClass('active');
+    $(this).attr("class", "active");
+    $('.tips').fadeOut();
+    $('.column').fadeIn();
+  })
+  $('#btn-tips').click(function(){
+    $(this).siblings().removeClass('active');
+    $(this).attr("class", "active");
+    $('.column').fadeOut();
+    $('.tips').fadeIn();
+  })
+  // コラムアイテム
+  $('.column-item').hover(function(){
+    $(this).find('.image-overlay').css('opacity', '1');
+    $(this).find('img').css('transform','scale(1.2)');
+  },function(){
+    $(this).find('.image-overlay').css('opacity', '0');
+    $(this).find('img').css('transform','scale(1)');
+  });
+  $('#btn-submit').click(function(){
+    
+  });
 });

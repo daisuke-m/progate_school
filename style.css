@@ -32,7 +32,7 @@ body {
 	border-bottom: 1px solid #eee;
 	background: white;
 	position: fixed;
-	z-index: 10;
+	z-index: 100;
 }
 #brand {
 	height: 50px;
@@ -90,6 +90,7 @@ body {
 .cover {
 	height: 100%;
 	background: rgba(0,0,0,0.6);
+	transition: all 0.4s;
 }
 #btn-keyvisal {
 	width: 140px;
@@ -317,6 +318,7 @@ body {
 	margin: 4px;
 	padding: 8px 15px;
 	transition: all 0.4s;
+	cursor: pointer;
 }
 #tab-nav a:hover {
 	background: #2DA7AD;
@@ -338,9 +340,29 @@ body {
 	float: left;
 	background: white;
 	box-shadow:rgba(0, 0, 0, 0.2) 0px 1px 1px 1px;
+	position: relative;
+}
+.column-item a {
+	display: block;
+	width: auto;
+	height: auto;
+	overflow:hidden;
 }
 .column-item img {
 	width: 100%;
+	transition: all 0.4s;
+}
+.column-item .image-overlay {
+	position: absolute;
+	top: 8;
+	left: 8;
+	opacity: 0;
+	display: block;
+	width: 464px;
+	height: 258px;
+	background: rgba(0,0,0,0.6);
+	transition: all 0.4s;
+	z-index: 10;
 }
 .caption {
 	padding-top: 15px;
