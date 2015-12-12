@@ -270,12 +270,15 @@
 				<h2>お問い合わせ</h2>
 			</div>
 			<div id="contact-left">
-				<h3>メッセージを送る</h3>
+				<h3 id="contact-head">メッセージを送る</h3>
 				<form>
-					<input type="text" name="address" placeholder="Email" required aria-required=”true”>
-					<input type="text" name="subject" placeholder="Subject" required>
-					<textarea name="message" rows="4" cols="40" placeholder="Message" required></textarea>
-					<a href="#" id="btn-submit">
+					<span>入力してください</span>
+					<input class="contact-item" type="text" name="address" placeholder="Email">
+					<span>入力してください</span>
+					<input class="contact-item" type="text" name="subject" placeholder="Subject">
+					<span>入力してください</span>
+					<textarea class="contact-item" name="message" rows="4" cols="40" placeholder="Message"></textarea>
+					<a id="btn-submit">
 						Submit
 					</a>
 				</form>

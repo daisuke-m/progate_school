@@ -41,7 +41,24 @@ $(function(){
     $(this).find('.image-overlay').css('opacity', '0');
     $(this).find('img').css('transform','scale(1)');
   });
+  // $('#btn-submit').click(function(){
+  //   if($('input[name="address"]').val() == ''){
+  //     $('input[name="address"]').prev('span').show();
+  //   } else if ($('input[name="subject"]').val() == ''){
+  //     $('input[name="subject"]').prev('span').show();
+  //   } else if ($('textarea[name="message"]').val() == ''){
+  //     $('textarea[name="message"]').prev('span').show();
+  //   } else {
+  //     $('form').hide();
+  //     $('#contact-head').html('お問い合わせありがとうございます。');
+  //   }
+  // });
   $('#btn-submit').click(function(){
-    
+    if($('.contact-item').val() == '') {
+      $('.contact-item').val('').prev('span').show();
+    } else {
+      $('form').hide();
+      $('#contact-head').html('お問い合わせありがとうございます。');
+    }
   });
 });
