@@ -53,12 +53,19 @@ $(function(){
   //     $('#contact-head').html('お問い合わせありがとうございます。');
   //   }
   // });
+
+  // $('#btn-submit').click(function(){
+  //   if($('.contact-item').val() == '') {
+  //     $('.contact-item').val('').prev('span').show();
+  //   } else {
+  //     $('form').hide();
+  //     $('#contact-head').html('お問い合わせありがとうございます。');
+  //   }
+  // });
+  
   $('#btn-submit').click(function(){
-    if($('.contact-item').val() == '') {
-      $('.contact-item').val('').prev('span').show();
-    } else {
-      $('form').hide();
-      $('#contact-head').html('お問い合わせありがとうございます。');
-    }
-  });
+    $('.contact-item').each(function(){
+      
+    })
+  }
 });
