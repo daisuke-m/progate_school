@@ -64,8 +64,27 @@ $(function(){
   // });
   
   $('#btn-submit').click(function(){
+    var input_flag = 0;
+    $('form span').hide();
     $('.contact-item').each(function(){
-      
-    })
-  }
+      console.log($(this).val());
+      if($(this).val() === '') {
+
+        $(this).prev('span').show();
+        // return true;
+
+      }
+      else { 
+        input_flag += 1;
+        // return false;
+        // $(this).prev('span').hide();
+      }
+      // $('form').hide();
+      // $('#contact-head').html('お問い合わせありがとうございます。');
+    });
+    if(input_flag === 3) {
+      $('form').hide();
+      $('#contact-head').html('お問い合わせありがとうございます。');
+    }
+  });
 });
